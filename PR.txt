@@ -1,0 +1,12 @@
+Exercício 1 
+
+    Dataset:
+
+
+
+    Execução:
+        1. npm install 
+        2. npm start
+
+
+Exercício 2 
