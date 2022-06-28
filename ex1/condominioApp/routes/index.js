@@ -51,7 +51,7 @@ router.post('/api/movimentos', (req, res, next) => {
         {
             let new_movimento = {
                 "_id": new ObjectID(),
-                "numero": Number(req.body.numero),
+                "numero": req.body.numero,
                 "tipo": req.body.tipo,
                 "data": req.body.data,
                 "valor": Number(req.body.valor),
