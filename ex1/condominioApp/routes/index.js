@@ -1,8 +1,8 @@
 const express = require('express');
+const router = express.Router();
 const Movimento = require('../controllers/movimento');
 const Pagamento = require('../controllers/pagamento');
 var ObjectID = require('mongodb').ObjectID;
-const router = express.Router();
 
 // GET /api/movimentos - Devolve a lista de movimentos, com todos os campos;
 router.get('/api/movimentos', (req, res, next) => {

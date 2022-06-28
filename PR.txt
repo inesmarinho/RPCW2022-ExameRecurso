@@ -2,7 +2,7 @@ Exercício 1
 
     Dataset: Criei uma pasta data com todos os csv 
 
-    Cria um modelo em MongoDB
+    Criei um modelo em MongoDB
         Com a base de dados com o nome CONDOMINIOS e as respetivas collections
             mongoimport --db CONDOMINIOS --collection pagamentos  --type=csv --headerline --file=mapa.csv
 
@@ -24,13 +24,13 @@ Exercício 1
 
 Exercício 2 
 
- 1. Página principal está completa
+    1. Página principal está completa
 
- 2. Página de movimento está completa 
+    2. Página de movimento está completa 
 
- 3. Página de pagamentos falta o post de novo registo funcionar devido à API. 
+    3. Página de pagamentos falta o post de novo registo funcionar devido à API. 
 
- 4. Completo 
+    4. Completo 
 
     Execução:
         1. npm install 
