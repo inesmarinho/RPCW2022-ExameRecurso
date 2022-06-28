@@ -1,12 +1,39 @@
 Exercício 1 
 
-    Dataset:
+    Dataset: Criei uma pasta data com todos os csv 
 
+    Cria um modelo em MongoDB
+        Com a base de dados com o nome CONDOMINIOS e as respetivas collections
+            mongoimport --db CONDOMINIOS --collection pagamentos  --type=csv --headerline --file=mapa.csv
 
+            mongoimport --db CONDOMINIOS --collection movimentos  --type=csv --headerline --file=receitas.csv
+
+            mongoimport --db CONDOMINIOS --collection fracoes  --type=csv --headerline --file=fracoes.csv
+
+    As queries realizadas foram:
+        GET /api/movimentos - Devolve a lista de movimentos, com todos os campos;
+        GET /api/pagamentos - Devolve a lista de pagamentos;
+        GET /api/pagamentos/:id - Devolve a lista de pagamentos da fração id, indicando os meses pagos, o total pago e o total em dívida;
+        POST /api/movimentos - Acrescenta um novo movimento;
+        POST /api/pagamentos - Acrescenta um novo pagamento, incompleta. 
 
     Execução:
         1. npm install 
         2. npm start
-
+        Aceder pela porta 3001
 
 Exercício 2 
+
+ 1. Página principal está completa
+
+ 2. Página de movimento está completa 
+
+ 3. Página de pagamentos falta o post de novo registo funcionar devido à API. 
+
+ 4. Completo 
+
+    Execução:
+        1. npm install 
+        2. npm start
+        Aceder pela porta 3000 
+

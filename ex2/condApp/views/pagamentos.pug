@@ -1,0 +1,80 @@
+extends layout
+
+block content
+    h1 Lista de pagamentos 
+    table
+        tr
+            th Fração
+            th Janeiro
+            th Fevereiro
+            th Março
+            th Abril 
+            th Maio 
+            th Junho 
+            th Julho 
+            th Agosto 
+            th Setembro 
+            th Outubro 
+            th Novembro 
+            th Dezembro 
+        for p in pagamento 
+            tr 
+                td= p.fracao 
+                td= p.jan 
+                td= p.fev 
+                td= p.mar 
+                td= p.abr 
+                td= p.mai 
+                td= p.jun 
+                td= p.jul 
+                td= p.ago 
+                td= p.set 
+                td= p.out 
+                td= p.nov 
+                td= p.dez
+
+    h3 Novo pagamento
+        form(action="/pagamentos" method="post")
+            label
+                b Fração: 
+            input(type="text" name="fracao")
+            label
+                b Janeiro: 
+            input(type="number" name="jan")
+            label
+                b Fevereiro: 
+            input(type="number" name="fev")
+            label
+                b Março: 
+            input(type="number" name="mar")
+            label
+                b Abril:
+            input(type="number" name="abr")
+            label
+                b Maio:
+            input(type="number" name="mai")
+            label
+                b Junho:
+            input(type="number" name="jun")
+            label
+                b Julho:
+            input(type="number" name="jul")
+            label
+                b Agosto:
+            input(type="number" name="ago")
+            label
+                b Setembro:
+            input(type="number" name="set")
+            label
+                b Outubro:
+            input(type="number" name="out")
+            label
+                b Novembro:
+            input(type="number" name="nov")
+            label
+                b Dezembro:
+            input(type="number" name="dez")
+
+            button(type="submit" value="Enviar") Submeter
+    a(href=('/'))
+        p Voltar à página inicial

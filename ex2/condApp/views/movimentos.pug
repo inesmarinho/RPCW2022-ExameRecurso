@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    h1 Lista de movimentos
+    table
+        tr
+            th Número 
+            th Tipo 
+            th Data 
+            th Valor 
+            th Entidade 
+            th Descrição
+        for m in movimento
+            tr 
+                td= m.numero 
+                td= m.tipo
+                td= m.data 
+                td= m.valor
+                td= m.entidade  
+                td= m.descricao 
+    h3 Novo movimento 
+        form(action="/movimentos" method="post")
+            label
+                b Número: 
+            input(type="text" name="numero")
+            label
+                b Tipo: 
+            input(type="text" name="tipo")
+            label
+                b Data: 
+            input(type="text" name="data")
+            label
+                b Valor: 
+            input(type="text" name="valor")
+            label
+                b Entidade:
+            input(type="text" name="entidade")
+            label
+                b Descrição:
+            input(type="text" name="descricao")
+
+            button(type="submit" value="Enviar") Submeter
+    a(href=('/'))
+        p Voltar à página inicial

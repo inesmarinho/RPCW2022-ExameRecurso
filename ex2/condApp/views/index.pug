@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Gestão de Condomínios
+    
+  p 
+    a(href="/movimentos") Lista de movimentos
+  
+  p 
+    a(href="/pagamentos") Lista de pagamentos 
+
+  p Total recebido: #{total.recebido}
+
+  p Total pago: #{total.pago}
